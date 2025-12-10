@@ -1,0 +1,55 @@
+# =============================================================================
+# REQUISITOS DEL PROYECTO: Detección y seguimiento de objetos en video
+# =============================================================================
+# Compatibilidad: Python 3.10, 3.11, 3.12
+# Instalación: pip install -r requirements.txt
+# =============================================================================
+
+# ============================================
+# --- Procesamiento de Datos ---
+# ============================================
+numpy>=1.24.0,<2.3.0            # Limitación por compatibilidad con matplotlib
+pandas>=2.0.0                   # Manipulación tabular (GT, trayectorias, evaluaciones)
+scipy>=1.10.0                   # Distancias, métricas, procesamiento numérico
+
+# ============================================
+# --- Visión por Computador ---
+# ============================================
+opencv-python>=4.8.0            # Optical Flow, lectura de video e imágenes
+pillow>=10.0.0                  # Procesamiento adicional de imágenes (PIL)
+
+# ============================================
+# --- Deep Learning (PyTorch + YOLO) ---
+# ============================================
+torch                           # Backend para YOLO y modelos propios
+torchvision                     # Transformaciones y utilidades de visión
+ultralytics>=8.0.0              # YOLOv8 / YOLOv11 para detección de objetos
+
+# ============================================
+# --- Machine Learning Clásico (opcional) ---
+# ============================================
+scikit-learn>=1.3.0             # PCA, métricas adicionales, etc.
+
+# ============================================
+# --- Tracking & Evaluación MOT ---
+# ============================================
+motmetrics>=1.4.0               # MOTA, MOTP, IDF1, ID switches
+
+# ============================================
+# --- Visualización ---
+# ============================================
+matplotlib>=3.7.0,<3.11.0       # Visualización de frames, trayectorias, estadísticas
+seaborn>=0.12.0                 # Visualizaciones estadísticas mejoradas
+
+# ============================================
+# --- Entorno de Notebooks ---
+# ============================================
+jupyter>=1.0.0                  # Entorno Jupyter
+ipykernel>=6.25.0               # Kernel Python para notebooks
+
+# ============================================
+# --- Utilidades ---
+# ============================================
+tqdm>=4.65.0                    # Barra de progreso para inferencia y procesamiento
+imageio>=2.31.0                 # Escritura de videos/gifs de resultados
+requests>=2.31.0               # Descarga de modelos YOLO en carpeta local
