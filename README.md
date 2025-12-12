@@ -133,4 +133,4 @@ Víctor Manuel Velásquez Cabeza - vivelasquezc@unal.edu.co
 
 ## 📄 Licencia y contexto académico
 
-Proyecto académico para la asignatura Visión por Computador, Universidad Nacional de Colombia. Uso educativo. Actualiza con la licencia que prefieras (ej. MIT) si decides publicarla.
+Proyecto académico para la asignatura Visión por Computador, Universidad Nacional de Colombia. Uso educativo. 
