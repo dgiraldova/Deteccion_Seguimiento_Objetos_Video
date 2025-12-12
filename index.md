@@ -118,28 +118,26 @@ La implementación de este *pipeline* nos permitió deconstruir el problema del 
 
 1.  **El Dataset (SportsMOT):**
     * Cui, Y., et al. (2023). *SportsMOT: A Large Multi-Object Tracking Dataset in Sports Scenes*. In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). [Link al paper](https://arxiv.org/abs/2304.05170)
-    * *Por qué:* Es la fuente oficial de los datos y las reglas de evaluación que utilizamos.
 
 2.  **Baseline 1 (IoU Tracker):**
     * Bochinski, E., Eiselein, V., & Sikora, T. (2017). *High-Speed Tracking-by-Detection Without Using Image Information*. In 14th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS).
-    * *Por qué:* Es el paper original que propuso el algoritmo de "solo solapamiento" que implementamos como primera línea base.
 
 3.  **Baseline 2 (Optical Flow - Farnebäck):**
     * Farnebäck, G. (2003). *Two-Frame Motion Estimation Based on Polynomial Expansion*. In Scandinavian Conference on Image Analysis (SCIA).
-    * *Por qué:* Es la referencia matemática del algoritmo de flujo óptico denso que utilizamos en OpenCV para predecir el movimiento.
 
 4.  **El Detector (YOLOv8):**
     * Jocher, G., Chaurasia, A., & Qiu, J. (2023). *Ultralytics YOLO* (Version 8.0.0) [Computer software]. Ultralytics. [Link al repo](https://github.com/ultralytics/ultralytics)
-    * *Por qué:* Es la arquitectura de detección sobre la cual construimos todo el pipeline.
-
-5.  **Trabajo Futuro (DeepSORT / Re-ID):**
+   
+5.  **(DeepSORT / Re-ID):**
     * Wojke, N., Bewley, A., & Paulus, D. (2017). *Simple Online and Realtime Tracking with a Deep Association Metric*. In IEEE International Conference on Image Processing (ICIP).
-    * *Por qué:* Es la referencia fundamental para explicar cómo la incorporación de vectores de apariencia (embeddings) soluciona los problemas de identidad que encontramos.
 
 
 David Giraldo Valencia: Arquitectura base del proyecto y configuración del entorno, Análisis Exploratorio de Datos (EDA) y pre-procesamiento del dataset SportsMOT, implementación de la línea base de detección con YOLOv8.
+
 Andrés Felipe Moreno Calle: Desarrollo e implementación de los algoritmos de seguimiento (IoU Tracker y Optical Flow Tracker), Cálculo de flujo óptico denso (Lucas-Kanade/Farnebäck) y lógica de asociación, Generación de métricas de evaluación cuantitativa (MOTA, IDF1).
+
 Juan Pablo Palacio Pérez: Análisis cualitativo de resultados y diagnóstico de fallos, Desarrollo de herramientas de visualización avanzada, Estructuración, redacción y consolidación del reporte técnico final.
+
 Víctor Manuel Velásquez Cabeza: Investigación bibliográfica y del estado del arte, Documentación de experimentos y soporte en la validación de pruebas, Revisión de código y control de calidad de los entregables
 
 ---
