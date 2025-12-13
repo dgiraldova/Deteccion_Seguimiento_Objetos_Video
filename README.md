@@ -11,7 +11,10 @@ Pipeline de visión por computador que combina detección con YOLO y seguimiento
 
 - Ejecutar detección de objetos en video con un modelo YOLO preentrenado.  
 - Implementar trackers sencillos (IoU y flujo óptico) para mantener IDs entre frames.  
-- Evaluar cuantitativamente (MOT metrics) y visualizar trayectorias.  
+- **Analizar y visualizar trayectorias** de movimiento de jugadores y balón.
+- Calcular **métricas de movimiento** (velocidad, distancia, aceleración).
+- Generar **mapas de calor** de actividad en el campo.
+- Evaluar cuantitativamente (MOT metrics) y comparar métodos de tracking.
 - Documentar el proceso en notebooks reproducibles.
 
 ## 📊 Dataset
@@ -43,13 +46,15 @@ Deteccion_Seguimiento_Objetos_Video/
 │   ├── detections_yolo/    # Salidas de YOLO (*.csv)
 │   ├── tracks_iou/         # Salidas tracker IoU (*.csv)
 │   ├── tracks_of/          # Salidas tracker Optical Flow (*.csv)
+│   ├── trajectories/       # Análisis de trayectorias y mapas de calor
 │   └── splits_txt/         # Archivos de splits (train/val/test)
 ├── notebooks/
 │   ├── 00_environment_check.ipynb
 │   ├── 01_eda_sportsmot.ipynb
 │   ├── 02_yolo_detection_baseline.ipynb
 │   ├── 03_tracking_baseline_iou.ipynb
-│   └── 04_tracking_optical_flow.ipynb
+│   ├── 04_tracking_optical_flow.ipynb
+│   └── 05_trajectory_comparison.ipynb
 └── reports/                # Reporte técnico / figuras / video
 ```
 
@@ -96,8 +101,9 @@ jupyter notebook
 1) `00_environment_check.ipynb` – Verifica versiones y dependencias.  
 2) `01_eda_sportsmot.ipynb` – Explora estructura MOT, secuencias y anotaciones.  
 3) `02_yolo_detection_baseline.ipynb` – Corre YOLOv8 preentrenado sobre una secuencia y guarda detecciones en `data/detections_yolo/`. Ajusta modelo, conf, iou, device si es necesario.  
-4) `03_tracking_baseline_iou.ipynb` – Carga detecciones, aplica IoU tracker, guarda tracks en `data/tracks_iou/`, evalúa con motmetrics y visualiza.  
-5) `04_tracking_optical_flow.ipynb` – Combina detecciones + flujo óptico para asociación, guarda tracks en `data/tracks_of/`, compara métricas con IoU y visualiza trayectorias.
+4) `03_tracking_baseline_iou.ipynb` – Carga detecciones, aplica IoU tracker, guarda tracks en `data/tracks_iou/`, evalúa con motmetrics, visualiza y **analiza trayectorias**.  
+5) `04_tracking_optical_flow.ipynb` – Combina detecciones + flujo óptico para asociación, guarda tracks en `data/tracks_of/`, compara métricas con IoU y **visualiza trayectorias avanzadas** con análisis de movimiento, mapas de calor y estadísticas.
+6) `05_trajectory_comparison.ipynb` – **Comparación detallada** entre trayectorias de IoU y Optical Flow: análisis de fragmentación, suavidad, cobertura temporal y visualizaciones comparativas.
 
 Notas:  
 - Las notebooks asumen que existe al menos un CSV de detecciones en `data/detections_yolo/`.  

@@ -1,0 +1,9 @@
+.venv/
+data
+data/detections_yolo/v_-6Os86HzwCs_c009_yolov8n_step1.csv
+data/tracks_iou/v_-6Os86HzwCs_c009_ioutracker.csv
+data/tracks_of/v_-6Os86HzwCs_c009_of_ioutracker.csv
+.vscode/settings.json
+data/detections_yolo/v_-6Os86HzwCs_c009_yolov8n_step1.csv
+data/tracks_iou/v_-6Os86HzwCs_c009_ioutracker.csv
+data/tracks_of/v_-6Os86HzwCs_c009_of_ioutracker.csv
