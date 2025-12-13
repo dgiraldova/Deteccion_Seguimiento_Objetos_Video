@@ -6,7 +6,7 @@ date: "12/12/2025"
 
 # 🏀⚽ Desafíos en el Seguimiento Deportivo: Comparativa de IoU vs. Flujo Óptico
 
-**Repositorio del Proyecto:** [Ver en GitHub](https://github.com/tu-usuario/Deteccion_Seguimiento_Objetos_Video)
+**Repositorio del Proyecto:** [Ver en GitHub](https://github.com/dgiraldova/Deteccion_Seguimiento_Objetos_Video)
 
 ---
 
