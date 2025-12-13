@@ -1,7 +1,7 @@
 ---
 título: "Sistema de Detección y Seguimiento de Objetos en Video: Benchmarking de YOLO y Flujo Óptico"
 autores: "David Giraldo Valencia, Andrés Felipe Moreno Calle, Víctor Manuel Velásquez Cabeza y Juan Pablo Palacio Pérez"
-date: "Diciembre 2025"
+date: "12/12/2025"
 ---
 
 # 🏀⚽ Desafíos en el Seguimiento Deportivo: Comparativa de IoU vs. Flujo Óptico
@@ -114,7 +114,7 @@ La implementación de este *pipeline* nos permitió deconstruir el problema del 
 2.  **Captura de la Dinámica:** Los algoritmos geométricos (IoU) y de flujo denso (Optical Flow) lograron modelar correctamente la **acción táctica** del juego. Como demostraron los mapas de calor, el sistema "entiende" perfectamente dónde ocurre la acción y mantiene la cobertura espacial.
 3.  **Identificación del Desafío Clave:** Al aislar exitosamente las variables de posición y movimiento, este estudio concluye que la persistencia de la identidad en escenarios de alta densidad requiere trascender la geometría. Hemos determinado que el sistema está listo para dar el siguiente paso lógico: la **integración de descriptores de apariencia (embeddings)**, para lo cual este proyecto ha dejado una base arquitectónica sólida y funcional.
 
-## Referencias
+## 6. Referencias
 
 1.  **El Dataset (SportsMOT):**
     * Cui, Y., et al. (2023). *SportsMOT: A Large Multi-Object Tracking Dataset in Sports Scenes*. In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV). [Link al paper](https://arxiv.org/abs/2304.05170)
@@ -131,6 +131,7 @@ La implementación de este *pipeline* nos permitió deconstruir el problema del 
 5.  **(DeepSORT / Re-ID):**
     * Wojke, N., Bewley, A., & Paulus, D. (2017). *Simple Online and Realtime Tracking with a Deep Association Metric*. In IEEE International Conference on Image Processing (ICIP).
 
+## 7. Análisis de Contribución Individual
 
 David Giraldo Valencia: Arquitectura base del proyecto y configuración del entorno, Análisis Exploratorio de Datos (EDA) y pre-procesamiento del dataset SportsMOT, implementación de la línea base de detección con YOLOv8.
 
@@ -139,6 +140,15 @@ Andrés Felipe Moreno Calle: Desarrollo e implementación de los algoritmos de s
 Juan Pablo Palacio Pérez: Análisis cualitativo de resultados y diagnóstico de fallos, Desarrollo de herramientas de visualización avanzada, Estructuración, redacción y consolidación del reporte técnico final.
 
 Víctor Manuel Velásquez Cabeza: Investigación bibliográfica y del estado del arte, Documentación de experimentos y soporte en la validación de pruebas, Revisión de código y control de calidad de los entregables
+
+## 📧 Contacto
+
+Para consultas sobre este proyecto, contactar a:
+
+- Juan Pablo Palacio Pérez - Universidad Nacional de Colombia - [juppalaciope@unal.edu.co](mailto:juppalaciope@unal.edu.co)
+- David Giraldo Valencia - Universidad Nacional de Colombia - [dgiraldova@unal.edu.co](mailto:dgiraldova@unal.edu.co)
+- Andrés Felipe Moreno Calle - Universidad Nacional de Colombia - [amorenocal@unal.edu.co](mailto:amorenocal@unal.edu.co)
+- Víctor Manuel Velásquez Cabeza - Universidad Nacional de Colombia - [vivelasquezc@unal.edu.co](mailto:vivelasquezc@unal.edu.co)
 
 ---
 *Este reporte fue generado como parte del curso de Visión por Computador, 2025.*
